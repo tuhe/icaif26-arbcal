@@ -1,0 +1,843 @@
+{
+ "calendar": "XNYS",
+ "start": "2017-01-01",
+ "end": "2023-12-31",
+ "n_expected_sessions": 1760,
+ "n_available": 1740,
+ "n_retained": 1739,
+ "n_valid_transitions": 1717,
+ "n_months": 84,
+ "months_expected": 84,
+ "missing_expected_sessions": [
+  "2017-09-27",
+  "2019-03-01",
+  "2019-04-17",
+  "2019-05-24",
+  "2019-06-07",
+  "2019-09-05",
+  "2020-06-18",
+  "2020-11-27",
+  "2020-12-24",
+  "2021-02-26",
+  "2021-08-09",
+  "2021-08-31",
+  "2021-09-07",
+  "2021-09-09",
+  "2021-09-15",
+  "2022-05-11",
+  "2022-06-17",
+  "2022-06-24",
+  "2022-12-16",
+  "2023-01-03"
+ ],
+ "dropped_by_cleaning": {
+  "2023-05-18": "cleaning_failed_quotes_or_fit"
+ },
+ "per_year": {
+  "2017": {
+   "expected": 251,
+   "retained": 250,
+   "valid_transitions": 248
+  },
+  "2018": {
+   "expected": 251,
+   "retained": 251,
+   "valid_transitions": 251
+  },
+  "2019": {
+   "expected": 252,
+   "retained": 247,
+   "valid_transitions": 242
+  },
+  "2020": {
+   "expected": 253,
+   "retained": 250,
+   "valid_transitions": 247
+  },
+  "2021": {
+   "expected": 252,
+   "retained": 246,
+   "valid_transitions": 240
+  },
+  "2022": {
+   "expected": 251,
+   "retained": 247,
+   "valid_transitions": 243
+  },
+  "2023": {
+   "expected": 250,
+   "retained": 248,
+   "valid_transitions": 246
+  }
+ },
+ "per_month_rows": {
+  "201701": {
+   "n_dates": 20,
+   "n_rows": 85461
+  },
+  "201702": {
+   "n_dates": 19,
+   "n_rows": 78346
+  },
+  "201703": {
+   "n_dates": 23,
+   "n_rows": 93903
+  },
+  "201704": {
+   "n_dates": 19,
+   "n_rows": 76916
+  },
+  "201705": {
+   "n_dates": 22,
+   "n_rows": 88272
+  },
+  "201706": {
+   "n_dates": 22,
+   "n_rows": 87612
+  },
+  "201707": {
+   "n_dates": 20,
+   "n_rows": 77861
+  },
+  "201708": {
+   "n_dates": 23,
+   "n_rows": 89619
+  },
+  "201709": {
+   "n_dates": 19,
+   "n_rows": 77390
+  },
+  "201710": {
+   "n_dates": 22,
+   "n_rows": 91300
+  },
+  "201711": {
+   "n_dates": 21,
+   "n_rows": 89585
+  },
+  "201712": {
+   "n_dates": 20,
+   "n_rows": 87340
+  },
+  "201801": {
+   "n_dates": 21,
+   "n_rows": 97544
+  },
+  "201802": {
+   "n_dates": 19,
+   "n_rows": 98484
+  },
+  "201803": {
+   "n_dates": 21,
+   "n_rows": 110407
+  },
+  "201804": {
+   "n_dates": 21,
+   "n_rows": 113627
+  },
+  "201805": {
+   "n_dates": 22,
+   "n_rows": 116481
+  },
+  "201806": {
+   "n_dates": 21,
+   "n_rows": 111445
+  },
+  "201807": {
+   "n_dates": 21,
+   "n_rows": 116027
+  },
+  "201808": {
+   "n_dates": 23,
+   "n_rows": 128380
+  },
+  "201809": {
+   "n_dates": 19,
+   "n_rows": 107017
+  },
+  "201810": {
+   "n_dates": 23,
+   "n_rows": 136674
+  },
+  "201811": {
+   "n_dates": 21,
+   "n_rows": 127175
+  },
+  "201812": {
+   "n_dates": 20,
+   "n_rows": 119298
+  },
+  "201901": {
+   "n_dates": 21,
+   "n_rows": 128066
+  },
+  "201902": {
+   "n_dates": 19,
+   "n_rows": 109343
+  },
+  "201903": {
+   "n_dates": 20,
+   "n_rows": 110807
+  },
+  "201904": {
+   "n_dates": 20,
+   "n_rows": 117842
+  },
+  "201905": {
+   "n_dates": 21,
+   "n_rows": 116178
+  },
+  "201906": {
+   "n_dates": 19,
+   "n_rows": 112336
+  },
+  "201907": {
+   "n_dates": 22,
+   "n_rows": 128786
+  },
+  "201908": {
+   "n_dates": 22,
+   "n_rows": 126689
+  },
+  "201909": {
+   "n_dates": 19,
+   "n_rows": 106921
+  },
+  "201910": {
+   "n_dates": 23,
+   "n_rows": 132203
+  },
+  "201911": {
+   "n_dates": 20,
+   "n_rows": 125946
+  },
+  "201912": {
+   "n_dates": 21,
+   "n_rows": 137145
+  },
+  "202001": {
+   "n_dates": 21,
+   "n_rows": 141027
+  },
+  "202002": {
+   "n_dates": 19,
+   "n_rows": 132836
+  },
+  "202003": {
+   "n_dates": 22,
+   "n_rows": 182489
+  },
+  "202004": {
+   "n_dates": 21,
+   "n_rows": 149674
+  },
+  "202005": {
+   "n_dates": 20,
+   "n_rows": 122921
+  },
+  "202006": {
+   "n_dates": 21,
+   "n_rows": 140718
+  },
+  "202007": {
+   "n_dates": 22,
+   "n_rows": 144085
+  },
+  "202008": {
+   "n_dates": 21,
+   "n_rows": 138634
+  },
+  "202009": {
+   "n_dates": 21,
+   "n_rows": 154709
+  },
+  "202010": {
+   "n_dates": 22,
+   "n_rows": 150346
+  },
+  "202011": {
+   "n_dates": 19,
+   "n_rows": 129871
+  },
+  "202012": {
+   "n_dates": 21,
+   "n_rows": 149467
+  },
+  "202101": {
+   "n_dates": 19,
+   "n_rows": 143231
+  },
+  "202102": {
+   "n_dates": 18,
+   "n_rows": 138022
+  },
+  "202103": {
+   "n_dates": 23,
+   "n_rows": 179050
+  },
+  "202104": {
+   "n_dates": 21,
+   "n_rows": 175555
+  },
+  "202105": {
+   "n_dates": 20,
+   "n_rows": 159887
+  },
+  "202106": {
+   "n_dates": 22,
+   "n_rows": 173394
+  },
+  "202107": {
+   "n_dates": 21,
+   "n_rows": 178901
+  },
+  "202108": {
+   "n_dates": 20,
+   "n_rows": 179878
+  },
+  "202109": {
+   "n_dates": 18,
+   "n_rows": 162052
+  },
+  "202110": {
+   "n_dates": 21,
+   "n_rows": 191477
+  },
+  "202111": {
+   "n_dates": 21,
+   "n_rows": 199887
+  },
+  "202112": {
+   "n_dates": 22,
+   "n_rows": 209661
+  },
+  "202201": {
+   "n_dates": 21,
+   "n_rows": 188123
+  },
+  "202202": {
+   "n_dates": 20,
+   "n_rows": 163962
+  },
+  "202203": {
+   "n_dates": 23,
+   "n_rows": 185074
+  },
+  "202204": {
+   "n_dates": 21,
+   "n_rows": 162080
+  },
+  "202205": {
+   "n_dates": 21,
+   "n_rows": 172852
+  },
+  "202206": {
+   "n_dates": 20,
+   "n_rows": 167136
+  },
+  "202207": {
+   "n_dates": 21,
+   "n_rows": 165292
+  },
+  "202208": {
+   "n_dates": 23,
+   "n_rows": 180993
+  },
+  "202209": {
+   "n_dates": 22,
+   "n_rows": 181526
+  },
+  "202210": {
+   "n_dates": 21,
+   "n_rows": 177130
+  },
+  "202211": {
+   "n_dates": 22,
+   "n_rows": 178450
+  },
+  "202212": {
+   "n_dates": 21,
+   "n_rows": 168992
+  },
+  "202301": {
+   "n_dates": 19,
+   "n_rows": 143907
+  },
+  "202302": {
+   "n_dates": 19,
+   "n_rows": 147515
+  },
+  "202303": {
+   "n_dates": 23,
+   "n_rows": 177860
+  },
+  "202304": {
+   "n_dates": 19,
+   "n_rows": 144144
+  },
+  "202305": {
+   "n_dates": 22,
+   "n_rows": 162133
+  },
+  "202306": {
+   "n_dates": 21,
+   "n_rows": 166002
+  },
+  "202307": {
+   "n_dates": 20,
+   "n_rows": 163265
+  },
+  "202308": {
+   "n_dates": 23,
+   "n_rows": 188130
+  },
+  "202309": {
+   "n_dates": 20,
+   "n_rows": 168847
+  },
+  "202310": {
+   "n_dates": 22,
+   "n_rows": 187270
+  },
+  "202311": {
+   "n_dates": 21,
+   "n_rows": 182236
+  },
+  "202312": {
+   "n_dates": 20,
+   "n_rows": 177774
+  }
+ },
+ "checksums": {
+  "201701": {
+   "file": "spx_eod_201701.txt",
+   "sha256": "0d1f75e4819d9f4961182d4b8732d3e53cee9f2348b572f7bf43e4c1ef32d4a1",
+   "bytes": 29755288
+  },
+  "201702": {
+   "file": "spx_eod_201702.txt",
+   "sha256": "a3c6b888572018ee369db79d9861a7ad6fd66e00c6454e591e2535d965f47a33",
+   "bytes": 27297500
+  },
+  "201703": {
+   "file": "spx_eod_201703.txt",
+   "sha256": "cb386939d057ec3e49d3d3d066e74cf992becef3fb4df21386e301e927e607e5",
+   "bytes": 32846049
+  },
+  "201704": {
+   "file": "spx_eod_201704.txt",
+   "sha256": "b971e92a664925f156a2325cecb7b1448b05f35969810791b9cb4e6d9eb93266",
+   "bytes": 26962914
+  },
+  "201705": {
+   "file": "spx_eod_201705.txt",
+   "sha256": "83f8c39b6dfd665008226411e4f6b2a9b00962490b4c28009e23c50801ee8065",
+   "bytes": 30842773
+  },
+  "201706": {
+   "file": "spx_eod_201706.txt",
+   "sha256": "80f5fef591e31af48a4d5c0ddd22e256579f137fe889f1b3fa37233d7a2317e0",
+   "bytes": 30700837
+  },
+  "201707": {
+   "file": "spx_eod_201707.txt",
+   "sha256": "46a78d8c198cdc876f84eb2d103b8e5b40b72228b9b9aa811bf6a301fef060a4",
+   "bytes": 27252286
+  },
+  "201708": {
+   "file": "spx_eod_201708.txt",
+   "sha256": "0ab9c014db3ee06e1c09d1abcc53cc31176a6f1ea5a40ef3076951138a65dd91",
+   "bytes": 31398397
+  },
+  "201709": {
+   "file": "spx_eod_201709.txt",
+   "sha256": "37cbb02ce851ec74c6d35eb4b7a2f5d1afa5b5d15d3966b8a3914d09b26a7714",
+   "bytes": 27135950
+  },
+  "201710": {
+   "file": "spx_eod_201710.txt",
+   "sha256": "f30b9ae0c641559b1947f7b24df3dc2705b2097f1e311dd408a9d3f84b98e322",
+   "bytes": 32014901
+  },
+  "201711": {
+   "file": "spx_eod_201711.txt",
+   "sha256": "3d2e93a035d5e3317744c72d1d219a4c067504cae8c221f0262365f0d8a6cb43",
+   "bytes": 31358693
+  },
+  "201712": {
+   "file": "spx_eod_201712.txt",
+   "sha256": "0ac0dfb34bb741ccb54a1f90b796c53551c4deaa90400932d2368a7abb4d93f3",
+   "bytes": 30707293
+  },
+  "201801": {
+   "file": "spx_eod_201801.txt",
+   "sha256": "89f87cc7d24f09ab2f13e0c46da354a2879dad009da742f00d2148bd84e075e1",
+   "bytes": 34350112
+  },
+  "201802": {
+   "file": "spx_eod_201802.txt",
+   "sha256": "1e7b9a757d4b368132a828d90c9b9c43a56a0ab469cc498f1145aaf2a34fe863",
+   "bytes": 34829772
+  },
+  "201803": {
+   "file": "spx_eod_201803.txt",
+   "sha256": "ee875f62b2e9858d0540fa43bac99b183d8db81e292f39614138cd053aa0c184",
+   "bytes": 38919176
+  },
+  "201804": {
+   "file": "spx_eod_201804.txt",
+   "sha256": "65132f20595d54138dc2feb76206e71ff380951c04b5afc0652fc7037339ea14",
+   "bytes": 40010817
+  },
+  "201805": {
+   "file": "spx_eod_201805.txt",
+   "sha256": "bfa04ef96ee6ce679b7ffbf94fd43cc94e4e72c8d0cfa62bc532d804800d47ce",
+   "bytes": 40951545
+  },
+  "201806": {
+   "file": "spx_eod_201806.txt",
+   "sha256": "573dfb2e77158f957d9d741829f25ac35833418d955acd68de1ade1ce6a5f89d",
+   "bytes": 39221795
+  },
+  "201807": {
+   "file": "spx_eod_201807.txt",
+   "sha256": "e9984f0d36369acbac30aba7d25049adbde651216dda213e785640f00c1a1054",
+   "bytes": 41387187
+  },
+  "201808": {
+   "file": "spx_eod_201808.txt",
+   "sha256": "e987e21a282658a7271ce5ab36b5ac9a6402108b85d4c2f2bd0a3b7a6c2a71ce",
+   "bytes": 45875280
+  },
+  "201809": {
+   "file": "spx_eod_201809.txt",
+   "sha256": "ba4a6b1be686b317eb129ee18b2c591ed5b796462fdbf57875237abfe468932d",
+   "bytes": 38299850
+  },
+  "201810": {
+   "file": "spx_eod_201810.txt",
+   "sha256": "9cafc790c92187f4b574e6a891c37b9f5df88178cf370bdef46fa2b0103269b6",
+   "bytes": 48833714
+  },
+  "201811": {
+   "file": "spx_eod_201811.txt",
+   "sha256": "ae8100296dfd0b61e0a4d74238b963e245d8b1ba7044a4088dfc2f673a2ae652",
+   "bytes": 45426186
+  },
+  "201812": {
+   "file": "spx_eod_201812.txt",
+   "sha256": "266b92f3b8acd7bcd2fdf94471a4d7a9942cb95959768974284d2af6b32a81d8",
+   "bytes": 42602989
+  },
+  "201901": {
+   "file": "spx_eod_201901.txt",
+   "sha256": "f462079ee726b2804b2f9558705d4040cdd6384990ba948b2668015e6edc5192",
+   "bytes": 45783034
+  },
+  "201902": {
+   "file": "spx_eod_201902.txt",
+   "sha256": "ad1b2e234ec36897de14365d4e6d6e7ab13bbee27c2e175132051fd3902bee93",
+   "bytes": 39024920
+  },
+  "201903": {
+   "file": "spx_eod_201903.txt",
+   "sha256": "4d324de30ba59b0453d848d8b831689eb799941c244e7bf6555df1719d0c6f7a",
+   "bytes": 39645524
+  },
+  "201904": {
+   "file": "spx_eod_201904.txt",
+   "sha256": "755a76fba637cce68a99fc3b4014e14b81d42eb3c7bb0d09c3ae3d2ed43c61e1",
+   "bytes": 42170242
+  },
+  "201905": {
+   "file": "spx_eod_201905.txt",
+   "sha256": "f765cdc7e4baf75bd49733726b49932c5851173be739999bc43838f1e57c7c23",
+   "bytes": 41302974
+  },
+  "201906": {
+   "file": "spx_eod_201906.txt",
+   "sha256": "88701482a5f154ee9ecda07d33abcab8335bc4a93c127da8b3ffa0dd3e3d1209",
+   "bytes": 39584368
+  },
+  "201907": {
+   "file": "spx_eod_201907.txt",
+   "sha256": "0a75bd84aa994b6d0e7366037c1998e27c2db2310e4b6d9cdc16c21f92d0bc0e",
+   "bytes": 45308278
+  },
+  "201908": {
+   "file": "spx_eod_201908.txt",
+   "sha256": "c7690ac783dffc66c23fccf2dae38ba7a4bf7213769cb1e30010998088f9c9b1",
+   "bytes": 44819948
+  },
+  "201909": {
+   "file": "spx_eod_201909.txt",
+   "sha256": "675c712c4b77fbd01b158e295caf707b541fee825dc837689c530658b8baff6e",
+   "bytes": 37808221
+  },
+  "201910": {
+   "file": "spx_eod_201910.txt",
+   "sha256": "46ca838636656d69b0eaa85709967b91070562311c5d2467968025d93b65cf8d",
+   "bytes": 46837810
+  },
+  "201911": {
+   "file": "spx_eod_201911.txt",
+   "sha256": "0ba554c4566ad6bb8642e45bfc5da0bc2452dbaa511b046f4674441e5675e2aa",
+   "bytes": 44800532
+  },
+  "201912": {
+   "file": "spx_eod_201912.txt",
+   "sha256": "6ad0e426b7f09439c09ed624e1d76b237dc092a993476e5437245089693c9a1f",
+   "bytes": 49012157
+  },
+  "202001": {
+   "file": "spx_eod_202001.txt",
+   "sha256": "ed586b68889539c80f3de3a34b26770b516a582596ac07862e2e32714a37c369",
+   "bytes": 50381552
+  },
+  "202002": {
+   "file": "spx_eod_202002.txt",
+   "sha256": "b9b4e261454940f2f96c7133fe9284c56ceba86780de0b1f19b344dcc08774db",
+   "bytes": 47540063
+  },
+  "202003": {
+   "file": "spx_eod_202003.txt",
+   "sha256": "bac2555abcf34d1384426276dd692822f1b8e331f8a8b496702ef56ed6f7c298",
+   "bytes": 65740673
+  },
+  "202004": {
+   "file": "spx_eod_202004.txt",
+   "sha256": "25baeb2450f9bc6eca52975c47a5649653bc42be9d015b5b9f57d3a99e614a1f",
+   "bytes": 54045844
+  },
+  "202005": {
+   "file": "spx_eod_202005.txt",
+   "sha256": "0fc81ee57f7e46698980175288d7885ef1fb7367d0f2681d8f9941142b1b8b0b",
+   "bytes": 44358513
+  },
+  "202006": {
+   "file": "spx_eod_202006.txt",
+   "sha256": "9ca761a7580589d22dd7e40fc98129062b8ce4065746a085681ca87d9cd95966",
+   "bytes": 50716596
+  },
+  "202007": {
+   "file": "spx_eod_202007.txt",
+   "sha256": "e4dfbf8189e53818a5270cd4f3118f35503bb084ca88d0258f4508a0cb2d0f4f",
+   "bytes": 51853423
+  },
+  "202008": {
+   "file": "spx_eod_202008.txt",
+   "sha256": "5c75652ce4e7dcb6724c23f3d62904ba80cba080cc9876c751b6e00b8f9949b0",
+   "bytes": 49810810
+  },
+  "202009": {
+   "file": "spx_eod_202009.txt",
+   "sha256": "32d5ac7472469371cc773fb7d1b8a8e3484d80b95ad8c70aa6f15da5c104cc68",
+   "bytes": 55669745
+  },
+  "202010": {
+   "file": "spx_eod_202010.txt",
+   "sha256": "68039573c679b374ad5139f92e99a30de792d142e30e90bfb1bb1c76af0ca4cd",
+   "bytes": 54173709
+  },
+  "202011": {
+   "file": "spx_eod_202011.txt",
+   "sha256": "ea1e27e8b7bec8f949b830e34e1e860e7a65d7ea43f4a387e807624b3745df28",
+   "bytes": 46718369
+  },
+  "202012": {
+   "file": "spx_eod_202012.txt",
+   "sha256": "bfd11174d82db5ad17043c4e8a4b6d6d4924535f0bd8f15554bcad35bf9230e0",
+   "bytes": 53725977
+  },
+  "202101": {
+   "file": "spx_eod_202101.txt",
+   "sha256": "0d605cacc67fbb48f6cb8c1937ef154c87e1a8e4038ce695cc3b76e484808342",
+   "bytes": 51444361
+  },
+  "202102": {
+   "file": "spx_eod_202102.txt",
+   "sha256": "29d15181eac0bf65bc4273d399ec11217d7ea8c39e800b3f02ce0f812d84d786",
+   "bytes": 49559196
+  },
+  "202103": {
+   "file": "spx_eod_202103.txt",
+   "sha256": "84a88690f9655739c37ac132635935c4e656ddbea7d40f296169643a7e31103d",
+   "bytes": 64299696
+  },
+  "202104": {
+   "file": "spx_eod_202104.txt",
+   "sha256": "dae5cf15f217afd8d18f343f0930a320e9c35581a9bde82ce68986975842b5dc",
+   "bytes": 62888711
+  },
+  "202105": {
+   "file": "spx_eod_202105.txt",
+   "sha256": "19569eb5c8dfc0430333e1c970560f82a6375763419d708c6a5cb52f5b05cd16",
+   "bytes": 57435200
+  },
+  "202106": {
+   "file": "spx_eod_202106.txt",
+   "sha256": "45cb05948bf15ca968f6eb53318fd009eebb125c711f1a1b3dc76a9a67ec3fc1",
+   "bytes": 62228522
+  },
+  "202107": {
+   "file": "spx_eod_202107.txt",
+   "sha256": "b42e0a77f39b5f6373dbe65fdb58b3d89443685640fb41d87471526676d48272",
+   "bytes": 64202115
+  },
+  "202108": {
+   "file": "spx_eod_202108.txt",
+   "sha256": "4925f6796b736aa6fc94771abc68410d2d45d1b2aba5ea6e93c025c422e51f63",
+   "bytes": 64572653
+  },
+  "202109": {
+   "file": "spx_eod_202109.txt",
+   "sha256": "44bbdf8cf3437c1cecd1792d926a4ac9c8f39b4960e35f83dd7532f9468ca89c",
+   "bytes": 58339193
+  },
+  "202110": {
+   "file": "spx_eod_202110.txt",
+   "sha256": "2a03e50ad09272af155e57164f510183c1b1a9be7412aa20a979f0ea77f7204d",
+   "bytes": 68863062
+  },
+  "202111": {
+   "file": "spx_eod_202111.txt",
+   "sha256": "ee9d3c77533a2609ec7daf643fad7f7bc9a9d022f0016c7518e0e9886eb859f2",
+   "bytes": 71927386
+  },
+  "202112": {
+   "file": "spx_eod_202112.txt",
+   "sha256": "35790ca05037e6949f5093042dab123e2c648a28b366603f5c361f3c76cf8572",
+   "bytes": 75597455
+  },
+  "202201": {
+   "file": "spx_eod_202201.txt",
+   "sha256": "4fd5e93ecab9ed41f5715596ef8289697c38c824af2716b6cf17379da135845b",
+   "bytes": 67892148
+  },
+  "202202": {
+   "file": "spx_eod_202202.txt",
+   "sha256": "bd74749db4b816a175b664786e5f7b582e27790468ac150196d0b82879107bef",
+   "bytes": 59397502
+  },
+  "202203": {
+   "file": "spx_eod_202203.txt",
+   "sha256": "c5f06d14a74865f692d86e592a06020d802ea79fa99adb4da8a571a0479e0898",
+   "bytes": 67147480
+  },
+  "202204": {
+   "file": "spx_eod_202204.txt",
+   "sha256": "ec20efb24e31626674cfd6a7718f014676073a51b13a117fc0ef1c266fcf048c",
+   "bytes": 58644595
+  },
+  "202205": {
+   "file": "spx_eod_202205.txt",
+   "sha256": "31fe8abe6cab5088e04395c870bb6b5135dd68c861270f3fd598e2447fcfb62e",
+   "bytes": 62473273
+  },
+  "202206": {
+   "file": "spx_eod_202206.txt",
+   "sha256": "3642e2c2ffefc037edf93484df91f80a176d58deede1c4489b8c790fcb7a7b5a",
+   "bytes": 60265033
+  },
+  "202207": {
+   "file": "spx_eod_202207.txt",
+   "sha256": "9abb818ba1a9feea9b409b8ebbd476a225108fa40365962a28297d877d093ae2",
+   "bytes": 59431747
+  },
+  "202208": {
+   "file": "spx_eod_202208.txt",
+   "sha256": "ddf78416f1794ecd676a0806efed072a7bc75752fe6455d44a69d04e0dfc1e40",
+   "bytes": 64980385
+  },
+  "202209": {
+   "file": "spx_eod_202209.txt",
+   "sha256": "2548661d14dad69fe554c34b40e1dc4acc5f178b761302c4f028f73b9048bce3",
+   "bytes": 65217972
+  },
+  "202210": {
+   "file": "spx_eod_202210.txt",
+   "sha256": "3599c70374df0837c94756a66ba189dbe8296bdbdcf372a69418fc9703a52058",
+   "bytes": 63759874
+  },
+  "202211": {
+   "file": "spx_eod_202211.txt",
+   "sha256": "76797e7d7b6b20adf82d442717c7eb7b59d93ecdd2a08078e960222ce96fdb8e",
+   "bytes": 64249773
+  },
+  "202212": {
+   "file": "spx_eod_202212.txt",
+   "sha256": "791d39e0def551a0265dc6e34c3c75331e1273e1269fcdf2d2f478635989d19c",
+   "bytes": 60803476
+  },
+  "202301": {
+   "file": "spx_eod_202301.txt",
+   "sha256": "93607c880881050ad900232eb4711f8caa8f39991abb1e896a27dbb8f56a2758",
+   "bytes": 51907218
+  },
+  "202302": {
+   "file": "spx_eod_202302.txt",
+   "sha256": "6b2d3a90c539da8698225074666b7552915aa2678de978d5c224cef73a2c91da",
+   "bytes": 53179253
+  },
+  "202303": {
+   "file": "spx_eod_202303.txt",
+   "sha256": "1f23be546cd8d03d41d1ff462ac49dd75bcae79ef24007b957bd5fbf92e96958",
+   "bytes": 64072139
+  },
+  "202304": {
+   "file": "spx_eod_202304.txt",
+   "sha256": "118b6541fba870f0f332b881e9448c676f3571bebdff4c0b58fa6d62c9387ef0",
+   "bytes": 52005205
+  },
+  "202305": {
+   "file": "spx_eod_202305.txt",
+   "sha256": "9be24bc11e09826823d369d87edc6e8ed56e74e55b0f54a817fae4dfcc6e9547",
+   "bytes": 58451948
+  },
+  "202306": {
+   "file": "spx_eod_202306.txt",
+   "sha256": "6ceb2f277ed3fa630a2e64572a7f69719606d499f388e256a84b859614b4c623",
+   "bytes": 59843688
+  },
+  "202307": {
+   "file": "spx_eod_202307.txt",
+   "sha256": "1bacfc3e36e57913c42476be0dba8e2ca00556e8e38b171ebfe1f92f40885229",
+   "bytes": 58878571
+  },
+  "202308": {
+   "file": "spx_eod_202308.txt",
+   "sha256": "7eebfec359cb2437fb5d2f3a4f1dd741b3efc9a67c0601d7f0e9fe9feda5c979",
+   "bytes": 67661975
+  },
+  "202309": {
+   "file": "spx_eod_202309.txt",
+   "sha256": "0c86618f6c905736f32fb3d3d859981bf67d1019e7e326076bcf373298a92f83",
+   "bytes": 60651999
+  },
+  "202310": {
+   "file": "spx_eod_202310.txt",
+   "sha256": "bbd8d9d875ea5ec9495b7b62799d9490bd9c4e484abfc752d62eca98245890d0",
+   "bytes": 67291555
+  },
+  "202311": {
+   "file": "spx_eod_202311.txt",
+   "sha256": "732d68e82e2b5a8dea1189ac64ddab9b8e3c264b7c12c80a8b0aaaa34d686410",
+   "bytes": 65534485
+  },
+  "202312": {
+   "file": "spx_eod_202312.txt",
+   "sha256": "aefa831be3d71ff68aad3f3cb2dd4a8ce49a806a4474ec46bba26c8235c7c429",
+   "bytes": 64026200
+  }
+ },
+ "elapsed_s": 9.0,
+ "phantom_non_session_panel_days": [
+  "2022-02-21",
+  "2022-05-30",
+  "2022-06-20",
+  "2022-07-04",
+  "2022-09-05",
+  "2022-11-24"
+ ],
+ "note_phantom": "OptionsDX 2022 files contain quote rows on 6 US market holidays (0x0 sizes / stale marks). These pass cleaning and ARE present in the canonical 917-day panel behind the current paper tables. The full-calendar pipeline excludes them via the manifest (holiday = valid weekend-like transition)."
+}
