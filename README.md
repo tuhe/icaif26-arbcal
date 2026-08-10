@@ -20,10 +20,13 @@ venv/bin/pip install -r requirements.txt
 export PYTHONPATH=src:scripts
 ```
 
-Python 3.11 or newer. Install the full `requirements.txt`: every entry is
-load-bearing, and `scikit-learn` in particular is not optional — without it
-the scenario covariance silently falls back to a different shrinkage
-estimator and the pipeline reproduces cleanly but with different numbers.
+Python 3.11 or newer. Install the full `requirements.txt` as given: every
+entry is load-bearing, and `scikit-learn` in particular is not optional —
+without it the scenario covariance silently falls back to a different
+shrinkage estimator, and the pipeline reproduces cleanly but with different
+numbers. `numpy`, `scipy` and `osqp` are pinned so that the panel and the
+scenario draws come out bit-identical; see the comment in the file if you
+want to relax them.
 `build_manifest.py` additionally shells out to the `7z` binary (`p7zip-full`)
 to read archive names; it is the only stage that does.
 
