@@ -128,9 +128,10 @@ and a clean virtual environment against the OptionsDX archives:
   headline held-out-2023 reserve pair reproduces exactly: 1.8829 for
   ArbCal-Rank against 3.3817 for the per-book static Bonferroni baseline.
 
-The daily-study numbers in the paper are therefore reproducible from the
-raw archives using only this repository.
+- `run_multiname.py` — the weekly 16-underlying study runs end to end from
+  the IvyDB pull and reproduces the paper's mean coverage for the ball and
+  set methods to the printed precision (0.898).
 
-The weekly 16-underlying study runs from the IvyDB pull described above
-(`scripts/pull_ivydb.py` rebuilds it); it is a secondary verification
-study, and the checks listed here cover the daily study.
+Every stage in this repository runs, and the daily-study numbers in the
+paper — every table in the body, and the headline reserve pair — are
+reproducible from the raw archives using only this repository.
