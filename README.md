@@ -91,7 +91,7 @@ The stages, in order:
 7. `run_multiname.py`, `run_multiname_margin.py` — weekly 16-name study
    (needs the WRDS/IvyDB pulls, not the OptionsDX archives)
 8. `make_tables.py` — prints the paper's tables to the terminal
-9. `make_figures.py` — writes the online-adaptation figure as a PNG
+9. `make_figures.py`, `make_concept_figure.py` — the paper's two figures
 
 Approximate cost on a consumer CPU: the scenario stage dominates
 (projection of 10,000 draws is roughly 10 seconds per date across 1,657
@@ -131,6 +131,9 @@ and a clean virtual environment against the OptionsDX archives:
   16-underlying study runs end to end from the IvyDB pull, reproduces the
   paper's mean coverage figures at the printed precision, and its margin
   file is bit-exact across all 71 reported values.
+- `make_figures.py`, `make_concept_figure.py` — **both figures come out
+  pixel-identical** to the ones in the paper (compared after rasterising at
+  equal resolution; only the timestamp matplotlib embeds differs).
 
 **Everything in the paper reproduces from this repository.** Every stage
 runs, every table in the body regenerates byte-identically, and the

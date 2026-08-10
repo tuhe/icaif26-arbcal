@@ -92,11 +92,19 @@ python scripts/run_final_panel.py --panel "$PANEL" --losses-glob "$SEL" \
 
 python scripts/run_scalar_baselines.py
 
-# --- weekly 16-name study (WRDS/IvyDB inputs, see README) -------------------
-# python scripts/run_multiname.py --out results/vs_multiname_joint.json
-# python scripts/run_multiname_margin.py --out results/vs_multiname_margin.json
+# --- weekly 16-name study ---------------------------------------------------
+# Needs the IvyDB pull (scripts/pull_ivydb.py) rather than the OptionsDX
+# archives; skip these two if you only have the daily inputs.
+python scripts/run_multiname.py --out results/vs_multiname_joint.json
+python scripts/run_multiname_margin.py --out results/vs_multiname_margin.json
 
 # --- reporting --------------------------------------------------------------
+# the tables wired into the paper body
+python scripts/make_main_tables.py
+python scripts/make_ablation_table.py --panel "$PANEL" --losses-glob "$SEL" --nu 3
+# terminal summary of the headline tables
 python scripts/make_tables.py --results results
+# figures
 python scripts/make_figures.py --panel "$PANEL" --losses-glob "$SEL" \
-    --canonical "$CANON" --out figures/online_adaptation.png
+    --canonical "$CANON" --out figures/fig_online_t3_95.pdf
+python scripts/make_concept_figure.py
