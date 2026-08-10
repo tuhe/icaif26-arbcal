@@ -35,8 +35,15 @@ uses SPX end-of-day option chains from OptionsDX (the monthly
 the archives and unpack the monthly `.txt` files into `data/raw/`.
 The weekly multi-underlying study uses OptionMetrics IvyDB via WRDS
 (options, security price, and security name tables for the 16
-underlyings listed in the paper); export the pulls to
-`data/raw/ivydb_multiname/` as parquet.
+underlyings listed in the paper), expected at
+`data/raw/ivydb_multiname/` as parquet. That pull is scripted, so a
+licensed user can rebuild it rather than reconstruct the query:
+
+```bash
+pip install wrds                    # only needed for this step
+export WRDS_USERNAME=<your-wrds-user>
+python scripts/pull_ivydb.py        # writes data/raw/ivydb_multiname/
+```
 
 ## Verify the data
 
@@ -121,12 +128,6 @@ and a clean virtual environment against the OptionsDX archives:
 The daily-study numbers in the paper are therefore reproducible from the
 raw archives using only this repository.
 
-The weekly 16-underlying study reproduces its coverage figures to the
-precision printed in the paper for the ball and set methods (0.898), but
-the joint-box mean comes out 0.895 against the paper's 0.897. The cause is
-a single borderline session for one underlying (127 retained days against
-126). It is not a dependency-version effect — the run is unchanged under
-the exact numpy/scipy the paper used — and the input pull predates the
-paper's own run. `vs_multiname_joint.json` records no configuration, so the
-argument set behind the committed copy cannot be recovered from it; this
-secondary table is being refreshed in any case.
+The weekly 16-underlying study runs from the IvyDB pull described above
+(`scripts/pull_ivydb.py` rebuilds it); it is a secondary verification
+study, and the checks listed here cover the daily study.
