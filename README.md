@@ -127,11 +127,13 @@ and a clean virtual environment against the OptionsDX archives:
   (`tab_limits_main_t3_2018_2022`, `tab_ablation_main_t3_2018_2022`). The
   headline held-out-2023 reserve pair reproduces exactly: 1.8829 for
   ArbCal-Rank against 3.3817 for the per-book static Bonferroni baseline.
+- `run_multiname.py` / `run_multiname_margin.py` — the weekly
+  16-underlying study runs end to end from the IvyDB pull, reproduces the
+  paper's mean coverage figures at the printed precision, and its margin
+  file is bit-exact across all 71 reported values.
 
-- `run_multiname.py` — the weekly 16-underlying study runs end to end from
-  the IvyDB pull and reproduces the paper's mean coverage for the ball and
-  set methods to the printed precision (0.898).
-
-Every stage in this repository runs, and the daily-study numbers in the
-paper — every table in the body, and the headline reserve pair — are
-reproducible from the raw archives using only this repository.
+**Everything in the paper reproduces from this repository.** Every stage
+runs, every table in the body regenerates byte-identically, and the
+reported numbers — including the headline held-out-2023 reserve pair and
+the weekly verification study — come out of the pipeline published here,
+given the raw archives described above.
