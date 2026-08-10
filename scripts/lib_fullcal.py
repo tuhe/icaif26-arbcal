@@ -17,13 +17,13 @@ Y2023_START = '2023-01-01'
 DEV_END = CFG.DEV_END
 
 def load_vs_run():
-    spec = importlib.util.spec_from_file_location('vs_run', Path(__file__).parent / 'vs_run.py')
+    spec = importlib.util.spec_from_file_location('vs_run', Path(__file__).parent / 'lib_run.py')
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
 
 def load_manifest(path=None):
-    path = Path(path or NAMESPACE / 'date_manifest.csv')
+    path = Path(path or (NAMESPACE / 'date_manifest.csv' if (NAMESPACE / 'date_manifest.csv').exists() else REPO / 'manifests' / 'date_manifest.csv'))
     rows = list(csv.DictReader(open(path)))
     return {r['date']: r for r in rows}
 
