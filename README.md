@@ -90,8 +90,10 @@ The stages, in order:
    `run_scalar_baselines.py` — remaining study arms
 7. `run_multiname.py`, `run_multiname_margin.py` — weekly 16-name study
    (needs the WRDS/IvyDB pulls, not the OptionsDX archives)
-8. `make_tables.py` — prints the paper's tables to the terminal
-9. `make_figures.py`, `make_concept_figure.py` — the paper's two figures
+8. `make_main_tables.py`, `make_ablation_table.py` — write the LaTeX tables
+   used in the paper into `results/`
+9. `make_tables.py` — prints those results to the terminal as plain tables
+10. `make_figures.py` — the online-adaptation figure
 
 Approximate cost on a consumer CPU: the scenario stage dominates
 (projection of 10,000 draws is roughly 10 seconds per date across 1,657
@@ -100,6 +102,26 @@ takes minutes. `make_scenarios.py` accepts `--t-start/--t-end`, and the
 per-date seeding is `default_rng(SEED_BASE + t)`, so splitting the date
 range across processes is bit-identical to one long run and brings the
 scenario stage to well under an hour on a many-core machine.
+
+## Tables and figures on their own
+
+`all_terminal_commands.sh` already runs these at the end, so a full run
+needs nothing extra. To redo just the reporting from existing `results/`:
+
+```bash
+python scripts/make_main_tables.py                      # LaTeX -> results/
+python scripts/make_ablation_table.py --panel data/panel_sessions.npz \
+    --losses-glob 'data/scen/scen_b_t3_*.npz' --nu 3
+python scripts/make_tables.py --results results         # print to terminal
+python scripts/make_figures.py --panel data/panel_sessions.npz \
+    --losses-glob 'data/scen/scen_b_t3_*.npz' \
+    --canonical results/fullcal_canonical.json --out figures/fig_online_t3_95.pdf
+```
+
+`make_tables.py` reads the result JSONs and prints them with `tabulate`, so
+you can read the headline numbers without opening a LaTeX file; the other
+generators write `.tex` into `results/`. Figure 1 in the paper is a
+hand-drawn schematic, not a result, and has no generator here.
 
 ## Reproduction status
 
@@ -131,12 +153,12 @@ and a clean virtual environment against the OptionsDX archives:
   16-underlying study runs end to end from the IvyDB pull, reproduces the
   paper's mean coverage figures at the printed precision, and its margin
   file is bit-exact across all 71 reported values.
-- `make_figures.py`, `make_concept_figure.py` — **both figures come out
-  pixel-identical** to the ones in the paper (compared after rasterising at
+- `make_figures.py` — the online-adaptation figure comes out
+  **pixel-identical** to the one in the paper (compared after rasterising at
   equal resolution; only the timestamp matplotlib embeds differs).
 
-**Everything in the paper reproduces from this repository.** Every stage
-runs, every table in the body regenerates byte-identically, and the
+**Everything the paper reports reproduces from this repository.** Every
+stage runs, every table in the body regenerates byte-identically, and the
 reported numbers — including the headline held-out-2023 reserve pair and
 the weekly verification study — come out of the pipeline published here,
 given the raw archives described above.

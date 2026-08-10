@@ -104,7 +104,6 @@ python scripts/make_main_tables.py
 python scripts/make_ablation_table.py --panel "$PANEL" --losses-glob "$SEL" --nu 3
 # terminal summary of the headline tables
 python scripts/make_tables.py --results results
-# figures
+# figure
 python scripts/make_figures.py --panel "$PANEL" --losses-glob "$SEL" \
     --canonical "$CANON" --out figures/fig_online_t3_95.pdf
-python scripts/make_concept_figure.py
